@@ -1,11 +1,8 @@
 module.exports = {
   basePath: '/docs',
-  async rewrites() {
+   async redirects() {
     return [
-      {
-        source: '/:path*',
-        destination: `/:path*`,
-      },
+      { "source": "/", "destination": "/docs", "permanent": true },
     ]
   },
 }
